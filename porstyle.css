@@ -77,6 +77,28 @@ a {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--secondaryTextColor);
+  position: relative;
+  width: fit-content;
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.pre-title:before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: var(--linecolor);
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+}
+
 /* logo and nav menu */
 
 .nav {
@@ -111,7 +133,8 @@ nav ul li a {
   color: var(--primaryTextColor);
 }
 
-.burger div {
+/* burger */
+.burgerrr div {
   width: 25px;
   height: 2px;
   background-color: #000;
@@ -120,10 +143,45 @@ nav ul li a {
   z-index: 99;
 }
 
-.burger {
+.burgerrr {
   display: none;
   z-index: 99;
-  position: fix;
+  position: fixed;
   top: 33px;
   right: 35px;
+}
+
+/* hero section */
+
+.hero {
+  /* max-width: 90%; */
+  /* height: 720px; */
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: justify;
+  margin-left: 10%;
+  /* border: 1px solid red; */
+}
+
+.hero-name {
+  font-size: 3rem;
+  width: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+  color: var(--primaryIconColor);
+}
+
+.hero-right img {
+  width: 30%;
+  /* margin-top: 10rem; */
+  /* margin-bottom:; */
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
 }
